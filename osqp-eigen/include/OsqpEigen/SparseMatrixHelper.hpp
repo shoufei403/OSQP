@@ -15,7 +15,7 @@
 #include <Eigen/Sparse>
 
 // OSQP
-#include <osqp.h>
+#include <osqp/osqp.h>
 
 /**
  * OsqpEigen namespace.

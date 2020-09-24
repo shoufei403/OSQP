@@ -20,11 +20,20 @@ s.t.  l <= Ax <= u
 #include <Eigen/Dense>
 
 #include <iostream>
-
+int testQP();
 
 int main()
 {
 
+    testQP();
+
+    return 0;
+}
+
+
+
+int testQP()
+{
 
     // allocate QP problem matrices and vectores
     Eigen::SparseMatrix<double> hessian; //P or H
@@ -173,7 +182,5 @@ int main()
     // get the controller input
     QPSolution = solver.getSolution();
 
-    std::cout << "QPSolution:" << std::endl << QPSolution << std::endl;
-
-    return 0;
+    std::cout << "QPSolution:" << std::endl << QPSolution << std::endl;    
 }

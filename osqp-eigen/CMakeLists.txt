@@ -102,8 +102,8 @@ add_library(OsqpEigen::OsqpEigen ALIAS OsqpEigen)
 set_target_properties(${LIBRARY_TARGET_NAME} PROPERTIES
   VERSION ${PROJECT_VERSION}
   PUBLIC_HEADER "${${LIBRARY_TARGET_NAME}_HDR}")
-
-target_compile_features(${LIBRARY_TARGET_NAME} PUBLIC cxx_std_14)
+add_definitions(-std=c++14)
+#target_compile_features(${LIBRARY_TARGET_NAME} PUBLIC cxx_std_14)
 
 # List exported CMake package dependencies
 set(OSQP_EIGEN_EXPORTED_DEPENDENCIES "")

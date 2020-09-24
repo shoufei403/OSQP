@@ -9,7 +9,7 @@
 #include <catch2/catch.hpp>
 
 #include <OsqpEigen/OsqpEigen.h>
-#include <osqp.h>
+#include <osqp/osqp.h>
 
 template<typename T, int n, int m>
 bool computeTest(const Eigen::Matrix<T, n, m> &mEigen)

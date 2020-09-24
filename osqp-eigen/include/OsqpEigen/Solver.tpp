@@ -6,8 +6,8 @@
  */
 
 #include <iostream>
-#include <auxil.h>
-#include <scaling.h>
+#include <osqp/auxil.h>
+#include <osqp/scaling.h>
 
 template<typename Derived>
 bool OsqpEigen::Solver::updateHessianMatrix(const Eigen::SparseCompressedBase<Derived> &hessianMatrix)
